@@ -1,0 +1,45 @@
+# 🔹 Dependencias
+node_modules/
+
+# 🔹 Build output
+dist/
+build/
+
+# 🔹 Archivos temporales del sistema
+.DS_Store
+Thumbs.db
+
+# 🔹 Archivos de entorno (variables privadas)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 🔹 Archivos de logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+vite-debug.log*
+
+# 🔹 Configuración de editores
+.vscode/
+.idea/
+*.swp
+
+# 🔹 Tipado y cache de TypeScript
+*.tsbuildinfo
+tsconfig.tsbuildinfo
+
+# 🔹 Archivos de test coverage
+coverage/
+
+# 🔹 Archivos de previsualización
+*.local
+*.tmp
+*.temp
+
+# 🔹 Cache de herramientas
+.cache/
+.eslintcache/
