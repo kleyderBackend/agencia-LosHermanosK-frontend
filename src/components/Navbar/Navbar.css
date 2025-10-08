@@ -1,31 +1,40 @@
+:root {
+    --navbar-bg: #c8d5db;
+    /* Azul profundo marino */
+    --navbar-link: #f6fff8;
+    /* Blanco espuma */
+    --navbar-link-hover: #00b4d8;
+    /* Turquesa */
+    --navbar-btn: #83e8fa;
+    /* Verde agua */
+    --navbar-list-bg: #ffe5b4;
+    /* Arena */
+    --color-list: white
+}
+
 .container {
     font-family: Arial, Helvetica, sans-serif;
-    display: flex;
+    background-color: var(--navbar-bg);
+}
+
+ul {
     justify-content: center;
-    align-items: center;
-    background-color: white;
-    font-size: 18px;
-    padding: 15 0;
-    box-shadow: 0 2px 8px (0,0,0.1);
-    position: fixed;
-    top: 0;
-    font-size: 20px;
+    display: flex;
+    flex-direction: row;
 }
 
 ul li {
-    display: inline;
+    list-style: none;
+    display: inline-block;
+    margin-right: 12px;
+}
 
-    justify-content: space-between;
-    margin-right: 20px;
+ul li:hover {
+    background-color: var(--navbar-link-hover);
+    border-radius: 6px;
 }
 
 ul li a {
-    color: rgb(0, 0, 0);
+    color: var(--navbar-link);
     text-decoration: none;
-}
-
-li:hover {
-    background-color: aquamarine;
-    border-radius: 10px;
-    padding: 5px;
 }

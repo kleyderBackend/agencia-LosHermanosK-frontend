@@ -10,7 +10,7 @@ export const LandingPage = () => {
             <main>
                 <Hero text="Hermanos K"
                     subText="Danos el placer de atenderte, viaja comodo y seguro con nosotro"
-                    image="public/img/logo.jpg"
+                    image="/img/logo.jpg"
                 />
             </main>
             <Footer />

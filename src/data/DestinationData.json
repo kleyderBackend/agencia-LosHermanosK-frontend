@@ -1,0 +1,89 @@
+[
+    {
+        "id": 1,
+        "nombre": "Guachalito",
+        "tipo": "playa",
+        "descripcion": "Playa tranquila y pintoresca con paisaje único, rocas en la playa y mar, ideal para relajarse.",
+        "ubicacion": "Nuquí, Chocó",
+        "imagen": "/img/guachalito.jpg",
+        "actividades": [
+            "playa",
+            "relax",
+            "natación",
+            "foto"
+        ],
+        "price": 250.000
+    },
+    {
+        "id": 2,
+        "nombre": "Termales de Nuquí",
+        "tipo": "termales",
+        "descripcion": "Pozos de aguas termales naturales en medio de la selva cerca del mar.",
+        "ubicacion": "Nuquí, Chocó",
+        "imagen": "/img/termales.jpg",
+        "actividades": [
+            "termales",
+            "spa natural",
+            "naturaleza"
+        ],
+        "price": 250.000
+    },
+    {
+        "id": 3,
+        "nombre": "Arusí",
+        "tipo": "playa",
+        "descripcion": "Centro poblado costero con gastronomía local, playa y cultura afro costera.",
+        "ubicacion": "Corregimiento Arusí, Nuquí",
+        "imagen": "/img/arusi.jpg",
+        "actividades": [
+            "playa",
+            "cultura",
+            "gastronomía",
+            "relax"
+        ],
+        "price": 250.000
+    },
+    {
+        "id": 4,
+        "nombre": "Parque Nacional Natural Ensenada de Utría",
+        "tipo": "biodiversidad",
+        "descripcion": "Parque natural con playas vírgenes, manglares, gran biodiversidad de flora y fauna, ideal para buceo, snorkel y avistamiento.",
+        "ubicacion": "Zona de Ensenada de Utría, Nuquí, Chocó",
+        "imagen": "/img/ensadaUtria.jpg",
+        "actividades": [
+            "biodiversidad",
+            "playa",
+            "snorkel",
+            "avistamiento"
+        ],
+        "price": 250.000
+    },
+    {
+        "id": 5,
+        "nombre": "Cascada Arcoíris",
+        "tipo": "cascada",
+        "descripcion": "Cascada impresionante en la selva que forma arcoíris con los rayos del sol, buen destino para caminata y contacto con naturaleza.",
+        "ubicacion": "Nuquí, Chocó",
+        "imagen": "/cascada_arcoiris.jpg",
+        "actividades": [
+            "caminata",
+            "naturaleza",
+            "foto"
+        ],
+        "price": 250.000
+    },
+    {
+        "id": 6,
+        "nombre": "Playa El Chocó",
+        "tipo": "playa",
+        "descripcion": "Playa virgen con aguas claras y vegetación exuberante, ideal para relajarse y bucear.",
+        "ubicacion": "Nuquí, Chocó",
+        "imagen": "/playa_el_choco.jpg",
+        "actividades": [
+            "playa",
+            "relax",
+            "buceo"
+        ],
+        "price": 250.000
+    }
+]
