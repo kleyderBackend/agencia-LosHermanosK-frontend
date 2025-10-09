@@ -1,0 +1,14 @@
+:root {
+    --color-main-bg: #cff7d38f;
+}
+
+.mainPagePrincipal {
+    background-color: var(--color-main-bg);
+    min-height: 100vh;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

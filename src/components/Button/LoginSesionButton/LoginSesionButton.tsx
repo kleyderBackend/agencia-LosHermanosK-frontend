@@ -1,9 +1,9 @@
-import './LoginSesionButton.css';
+import styles from './LoginSesionButton.module.css';
 
 export const LoginSesionRegisterButton = () => {
     return (
         <>
-            <button className='btn-login'  type='submit'>Inciar Sesión</button>
+            <button className={styles.btnLogin}  type='submit'>Inciar Sesión</button>
         </>
     );
 };

@@ -1,20 +1,18 @@
-import { BookingButton } from '../Button/BookingButton/BookingButton';
 import './DestinationCar.css'
+
 interface DestinationCardProps {
     nameDestiny: string;
     image: string;
-    price: number
+    price: number;
+    onlickItem: () => void;
 };
 
-export const DestinationCard = ({ nameDestiny, image, price }: DestinationCardProps) => {
+export const DestinationCard = ({ nameDestiny, image, price, onlickItem }: DestinationCardProps) => {
     return (
-        <>
-            <section className='hero-principal-destinations'>
-                <h3>{nameDestiny}</h3>
-                <img src={image} />
-                <h5>{price}</h5>
-                <BookingButton />
-            </section>
-        </>
+        <section className='hero-principal-destinations' onClick={onlickItem}>
+            <h3>{nameDestiny}</h3>
+            <img src={image} alt={nameDestiny} />
+            <h5>{price}</h5>
+        </section>
     );
 };

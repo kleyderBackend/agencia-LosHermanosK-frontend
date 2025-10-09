@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom';
 import { RegisterButton } from '../../Button/RegisterButton/RegisterBotton';
 import { emailRegex, passwordRegex } from '../../../utils/formatEmaiAndPassword';
@@ -8,7 +8,8 @@ export const RegisterForm = () => {
     const [email, setEmail] = useState("");
     const [phone, setPhone] = useState("");
     const [password, setPassword] = useState("");
-    const HandlerSubmit = () => {
+    const HandlerSubmit = (e: React.FormEvent) => {
+        e.preventDefault();
         if (!name || !email || !phone || !password) {
             alert('debes ingresar todos los campos');
             return;
@@ -24,12 +25,12 @@ export const RegisterForm = () => {
     }
     return (
         <>
-            <form action="" className='register-form'>
+            <form onSubmit={HandlerSubmit} className='register-form'>
                 <input type="text" name='name' value={name} placeholder="ingrese su nombre:" onChange={(e) => setName(e.target.value)} />
                 <input type="email" name="email" value={email} placeholder='ingrese un correo electronico:' onChange={(e) => setEmail(e.target.value)} />
                 <input type="tel" name='phone' value={phone} placeholder='ingrese un numero telefonico:' onChange={(e) => setPhone(e.target.value)} />
                 <input type="password" name="password" value={password} placeholder='ingrese una contraseña:' onChange={(e) => setPassword(e.target.value)} />
-                <RegisterButton HandlerFunction={HandlerSubmit} />
+                <RegisterButton  />
                 <p>¿Ya tienes cuenta? <NavLink to='/login'>Iniciar Sesión</NavLink></p>
             </form>
         </>

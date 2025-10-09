@@ -1,0 +1,15 @@
+:root {
+    --colorBtn: #0AACF1;
+    --color-hover-btn: #086992;
+}
+
+.btnLogin {
+    background-color: var(--colorBtn);
+    width: 150px;
+    color: #ffffff;
+    border-radius: 12px;
+}
+
+.btnLogin:hover {
+    background-color: var(--color-hover-btn);
+}

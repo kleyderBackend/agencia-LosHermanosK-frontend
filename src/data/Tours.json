@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "Tour Sur",
+        "description": "Recorrido por el sur de Nuquí con playas, termales y cascadas. Ideal para relajarse y disfrutar de la naturaleza.",
+        "activities": [
+            "Avistamiento de ballenas",
+            "Tour Termales de Nuquí",
+            "Tour Cascada del Amor",
+            "Tour Guachalito",
+            "Almuerzo en Joví"
+        ],
+        "destinations": [
+            1,
+            2,
+            5
+        ],
+        "prices": {
+            "transporteTour": 140000,
+            "almuerzoTour": 35000,
+            "entradaTermales": 15000
+        },
+        "totalAproximado": 190000,
+        "duration": "1 día",
+        "seasonNote": "Temporada de ballenas: junio a octubre",
+        "image": "/img/tour_sur.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Tour Norte",
+        "description": "Aventura hacia el norte de Nuquí visitando cascadas, manglares y el Parque Utría, hogar de una impresionante biodiversidad.",
+        "activities": [
+            "Avistamiento de ballenas",
+            "Tour Cascada Morromico",
+            "Tour Parque Utría",
+            "Recorrido Manglares Utría",
+            "Tour Playa Blanca"
+        ],
+        "destinations": [
+            4,
+            6
+        ],
+        "prices": {
+            "transporteTour": 140000,
+            "almuerzoTour": 35000,
+            "entradaUtria": 22000,
+            "entradaUtriaExtranjero": 61000
+        },
+        "totalAproximado": 197000,
+        "duration": "1 día",
+        "seasonNote": "Temporada de ballenas: junio a octubre",
+        "image": "/img/tour_norte.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Tour Nuquí",
+        "description": "Descubre los alrededores de Nuquí en un recorrido por manglares y la playa Olímpica, ideal para grupos y familias.",
+        "activities": [
+            "Recorrido Manglares",
+            "Recorrido Playa Olímpica"
+        ],
+        "destinations": [
+            6
+        ],
+        "prices": {
+            "porPersona": 70000,
+            "porDosPersonas": 120000,
+            "tresPersonasEnAdelante": 50000
+        },
+        "duration": "Medio día",
+        "seasonNote": "Temporada de ballenas: junio a octubre",
+        "image": "/img/tour_nuqui.jpg"
+    }
+]

@@ -1,7 +1,7 @@
 import { NavLink, useLocation } from 'react-router-dom';
 import { useState } from 'react';
 import { LoginForm } from '../Form/LoginForm/LoginForm';
-import './Navbar.css';
+import styles from './Navbar.module.css';
 
 export const Navbar = () => {
     const location = useLocation();
@@ -10,10 +10,10 @@ export const Navbar = () => {
         setShowLogin(!showLogin);
     };
     return (
-        <nav className='container'>
+        <nav className={styles.navContainer}>
             {location.pathname === '/' && (
                 <button
-                    className="register-nav-btn"
+                    className={styles.registerNavBtn}
                     type="button"
                     onClick={toggleLoginForm}
                 >
@@ -21,10 +21,10 @@ export const Navbar = () => {
                 </button>
             )}
             {showLogin && (
-                <div className="login-form-container">
+                <div className={styles.loginFormContainer}>
                     <LoginForm />
                 </div>)}
-            <ul className='nv-list'>
+            <ul className={styles.navList}>
                 <li><NavLink to="/">Inicio</NavLink></li>
                 <li><NavLink to="/destinations">Destinos</NavLink></li>
                 <li><NavLink to="/about">Acerca de</NavLink></li>

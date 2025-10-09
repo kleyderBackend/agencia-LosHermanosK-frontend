@@ -1,13 +1,10 @@
 
 import './RegisterButton.css';
 
-interface RegisterButtonProps {
-    HandlerFunction: () => void;
-}
-export const RegisterButton = ({ HandlerFunction }: RegisterButtonProps) => {
+export const RegisterButton = () => {
     return (
         <>
-            <button className='register-btn' onClick={HandlerFunction} type='button'>
+            <button className='register-btn' type='button'>
                 RegisterMe
             </button>
         </>

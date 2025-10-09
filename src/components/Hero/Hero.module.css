@@ -1,0 +1,42 @@
+.heroPrincipal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+.heroText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.heroTitle {
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+    color: #000;
+}
+
+.heroSubText {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0;
+}
+
+.heroLogo {
+    width: 150px;
+    /* 🔹 antes 250px, ahora más pequeño */
+    height: auto;
+}
+
+.heroLogo img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: contain;
+}
