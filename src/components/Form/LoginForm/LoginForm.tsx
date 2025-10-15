@@ -28,11 +28,11 @@ export const LoginForm = () => {
                     type="password"
                     name="password"
                     value={password}
-                    placeholder='ingrese su contraseñá'
+                    placeholder='ingrese su contraseña'
                     onChange={(e) => setPassword(e.target.value)}
                 />
                 <LoginSesionRegisterButton />
-                <p>¿No tienes cuenta? <NavLink to='/register'>Registrate aqui</NavLink>
+                <p>¿No tienes cuenta? <NavLink to='/register'>Registrase aquí</NavLink>
                 </p>
             </form>
         </>

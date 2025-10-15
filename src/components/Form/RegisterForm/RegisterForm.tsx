@@ -19,7 +19,7 @@ export const RegisterForm = () => {
             return;
         }
         if (!passwordRegex.test(password)) {
-            alert('formato de contraseña incorrecto debe incluir caracter especial y numeros');
+            alert('formato de contraseña incorrecto debe incluir caracteres especial y números');
             return;
         }
     }
@@ -27,8 +27,8 @@ export const RegisterForm = () => {
         <>
             <form onSubmit={HandlerSubmit} className='register-form'>
                 <input type="text" name='name' value={name} placeholder="ingrese su nombre:" onChange={(e) => setName(e.target.value)} />
-                <input type="email" name="email" value={email} placeholder='ingrese un correo electronico:' onChange={(e) => setEmail(e.target.value)} />
-                <input type="tel" name='phone' value={phone} placeholder='ingrese un numero telefonico:' onChange={(e) => setPhone(e.target.value)} />
+                <input type="email" name="email" value={email} placeholder='ingrese un correo electrónico:' onChange={(e) => setEmail(e.target.value)} />
+                <input type="tel" name='phone' value={phone} placeholder='ingrese un numero telefónico:' onChange={(e) => setPhone(e.target.value)} />
                 <input type="password" name="password" value={password} placeholder='ingrese una contraseña:' onChange={(e) => setPassword(e.target.value)} />
                 <RegisterButton  />
                 <p>¿Ya tienes cuenta? <NavLink to='/login'>Iniciar Sesión</NavLink></p>

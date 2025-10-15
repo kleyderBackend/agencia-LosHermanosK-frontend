@@ -13,11 +13,10 @@ interface TourCardProps {
 
 export const TourCard = ({ name, description, activities, destinations, prices, duration, seasonNote, image }: TourCardProps) => {
     return (<>
-
         <section className={styles.sectionCardTour}>
-            <div className={styles.sectionDivTour}>
-                <h2 className={styles.seectionNameTour}>{name}</h2>
-                <img src={image} alt={`imagen de ${name}`} className={styles.imgSectionTour} />
+            <div className={styles.sectionDivTour}> 
+                <h2 className={styles.sectionNameTour}>{name}</h2>
+                <img src={image} alt={`image de ${name}`} className={styles.imgSectionTour} />
                 <ul className={styles.ulSectionTour}>
                     <li>{destinations}</li>
                 </ul>
@@ -33,7 +32,7 @@ export const TourCard = ({ name, description, activities, destinations, prices, 
                             <li key={i}>{act}</li>
                         ))}
                     </ul>
-                    <ul className={styles.ulPriceTourd}>
+                    <ul className={styles.ulPriceTour}>
                         {prices.map((p, i) => (
                             <li key={i}>
                                 {p.plan}: ${p.price}
