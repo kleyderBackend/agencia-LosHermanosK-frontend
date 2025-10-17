@@ -1,0 +1,114 @@
+/* DestinationCar.module.css */
+
+.heroPrincipalDestinations {
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 300px;
+  margin: 0 auto;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.heroPrincipalDestinations:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.heroPrincipalDestinations::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Título del destino */
+.heroPrincipalDestinations h3 {
+  color: #2d3748;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+  line-height: 1.3;
+}
+
+/* Imagen del destino */
+.heroPrincipalDestinations img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.heroPrincipalDestinations:hover img {
+  transform: scale(1.05);
+}
+
+/* Precio */
+.heroPrincipalDestinations h5 {
+  color: #48bb78;
+  font-size: 1.75rem;
+  font-weight: 800;
+  margin: 0;
+  text-align: center;
+  background: linear-gradient(135deg, #48bb78, #38a169);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Efecto de pulso al hacer clic */
+.heroPrincipalDestinations:active {
+  transform: scale(0.98);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .heroPrincipalDestinations {
+    max-width: 100%;
+    padding: 16px;
+    gap: 12px;
+  }
+  
+  .heroPrincipalDestinations h3 {
+    font-size: 1.3rem;
+  }
+  
+  .heroPrincipalDestinations img {
+    height: 180px;
+  }
+  
+  .heroPrincipalDestinations h5 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroPrincipalDestinations {
+    padding: 12px;
+    gap: 10px;
+  }
+  
+  .heroPrincipalDestinations h3 {
+    font-size: 1.2rem;
+  }
+  
+  .heroPrincipalDestinations img {
+    height: 160px;
+  }
+  
+  .heroPrincipalDestinations h5 {
+    font-size: 1.3rem;
+  }
+}

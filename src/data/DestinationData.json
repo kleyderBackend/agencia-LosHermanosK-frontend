@@ -34,7 +34,7 @@
         "type": "playa",
         "description": "Centro poblado costero con gastronomía local, playa y cultura afro costera.",
         "ubicacion": "Corregimiento Arusí, Nuquí",
-        "image": "/img/arusi.jpg",
+        "image": "/public/img/images.jpeg",
         "activitys": [
             "playa",
             "cultura",
@@ -60,11 +60,11 @@
     },
     {
         "id": 5,
-        "name": "Cascada Arcoíris",
+        "name": "Cascada Del Amor",
         "type": "cascada",
         "description": "Cascada impresionante en la selva que forma arcoíris con los rayos del sol, buen destino para caminata y contacto con naturaleza.",
         "ubicacion": "Nuquí, Chocó",
-        "image": "/cascada_arcoiris.jpg",
+        "image": "/public/img/casacdaDelArmor.jpg",
         "activitys": [
             "caminata",
             "naturaleza",
@@ -78,7 +78,7 @@
         "type": "playa",
         "description": "Playa virgen con aguas claras y vegetación exuberante, ideal para relajarse y bucear.",
         "ubicacion": "Nuquí, Chocó",
-        "image": "/playa_el_choco.jpg",
+        "image": "/img/playaChoco.jpeg",
         "activitys": [
             "playa",
             "relax",

@@ -5,9 +5,8 @@ import { DestinationCard } from '../../components/DestinationCard/DestinationCar
 import { Footer } from '../../components/Footer/Footer';
 import destiny from '../../data/DestinationData.json';
 import { usePreviewSelection } from '../../hooks/usePreviewSelection';
-
-import './DestinationPage.css';
 import { DestinationsPreview } from '../../components/DestinationsPreview/DestinationsPreview';
+import styles from './DestinationPages.module.css';
 
 export const DestinationPage = () => {
     const [biodiversidad, setbiodiversidad] = useState(false);
@@ -15,22 +14,21 @@ export const DestinationPage = () => {
     const [cascada, setCascada] = useState(false);
     const [termales, setTermales] = useState(false);
 
-    // 🔥 Aquí filtramos según los valores
     const filteredDestinations = destiny.filter(des => {
         if (biodiversidad && des.type === 'biodiversidad') return true;
         if (playa && des.type === 'playa') return true;
         if (cascada && des.type === 'cascada') return true;
         if (termales && des.type === 'termales') return true;
-        // si ningún filtro está activo, mostramos todo
         if (!biodiversidad && !playa && !cascada && !termales) return true;
         return false;
     });
-    const { selected, selectItem } = usePreviewSelection()
+
+    const { selected, selectItem } = usePreviewSelection();
+
     return (
         <>
             <Navbar />
-            <main>
-                {/* 🔁 Paso 2: Pasamos props al filtro */}
+            <main className={styles['main']}>
                 <FilterDestination
                     biodiversidad={biodiversidad}
                     playa={playa}
@@ -42,7 +40,7 @@ export const DestinationPage = () => {
                     setTermales={setTermales}
                 />
 
-                <div className="card-container">
+                <div className={styles['cardContainer']}>
                     <h2>Descubre Nuquí aquí</h2>
                     {filteredDestinations.map(des => (
                         <DestinationCard
@@ -54,7 +52,8 @@ export const DestinationPage = () => {
                         />
                     ))}
                     {selected && (
-                        <DestinationsPreview nameDestiny={selected.name}
+                        <DestinationsPreview 
+                            nameDestiny={selected.name}
                             type={selected.type}
                             description={selected.description}
                             image={selected.image}
@@ -63,7 +62,6 @@ export const DestinationPage = () => {
                         />
                     )}
                 </div>
-
             </main>
             <Footer />
         </>

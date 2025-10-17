@@ -1,5 +1,6 @@
 import { BookingButton } from '../Button/BookingButton/BookingButton';
-import './DestinationsPreview.css'
+import styles from './DestinationsPreview.module.css'; // Cambio importante aquí
+
 interface DestinationsPreviewProps {
     nameDestiny: string;
     type: string;
@@ -11,13 +12,13 @@ interface DestinationsPreviewProps {
 
 export const DestinationsPreview = ({ nameDestiny, type, description, image, activitys, price }: DestinationsPreviewProps) => {
     return (
-        <div className='container-preview-destiny'>
+        <div className={styles.containerPreviewDestiny}> {/* Usar styles */}
             <img src={image} alt={`Imagen de ${nameDestiny}`} />
             <h2>{nameDestiny}</h2>
-            <p className='destination-type'>{type}</p>
-            <p className='destination-description'>{description}</p>
-            <div className='activies-section'>
-                <ul>
+            <p className={styles.destinationType}>{type}</p> {/* Usar styles */}
+            <p className={styles.destinationDescription}>{description}</p> {/* Usar styles */}
+            <div className={styles.activiesSection}> {/* Usar styles */}
+                <ul className={styles.ulDivDestinations}> {/* Usar styles */}
                     <h3>Actividades:</h3>
                     {activitys.map((activity, index) => (
                         <li key={index}>{activity}</li>
@@ -25,7 +26,7 @@ export const DestinationsPreview = ({ nameDestiny, type, description, image, act
                 </ul>
             </div>
             <p>
-                <strong>${price.toLocaleString()}COP</strong>
+                <strong>${price.toLocaleString()} COP</strong>
             </p>
             <BookingButton />
         </div>

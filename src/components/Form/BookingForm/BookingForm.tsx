@@ -57,20 +57,20 @@ export const BookingForm = () => {
                 onChange={(e) => setQuantityPeople(Number(e.target.value))}
             />
             <select
-  name="categoryTravel"
-  className={styles.selectCategory}
-  value={categoryTravel}
-  onChange={(e) => setCategoryTravel(e.target.value)}
->
-  <option value="">Seleccione una categoría</option>
-  <option value="expreso-pareja-privado">Destino viaje expreso pareja (privado)</option>
-  <option value="expreso-individual-privado">Destino viaje expreso individual (privado)</option>
-  <option value="pareja">Destino viaje en pareja</option>
-  <option value="individual">Destino viaje individual</option>
-  <option value="tour-pareja-privado">Tour en pareja expreso (privado)</option>
-  <option value="tour-individual-privado">Tour viaje expreso individual (privado)</option>
-  <option value="tour-pareja">Tour viaje en pareja</option>
-</select>
+                name="categoryTravel"
+                className={styles.selectCategory}
+                value={categoryTravel}
+                onChange={(e) => setCategoryTravel(e.target.value)}
+            >
+                <option value="">Seleccione una categoría</option>
+                <option value="expreso-pareja-privado">Destino viaje expreso pareja (privado)</option>
+                <option value="expreso-individual-privado">Destino viaje expreso individual (privado)</option>
+                <option value="pareja">Destino viaje en pareja</option>
+                <option value="individual">Destino viaje individual</option>
+                <option value="tour-pareja-privado">Tour en pareja expreso (privado)</option>
+                <option value="tour-individual-privado">Tour viaje expreso individual (privado)</option>
+                <option value="tour-pareja">Tour viaje en pareja</option>
+            </select>
             <input type="text" name="comment"
                 id="input-comment"
                 value={comments}
