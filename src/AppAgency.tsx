@@ -2,10 +2,12 @@ import { Routes, Route } from 'react-router-dom'
 import { LandingPage } from './pages/LadingPage/LandingPage'
 import { RegisterForm } from './components/Form/RegisterForm/RegisterForm';
 import { DestinationPage } from './pages/DestinationPages/DestinationPages';
-import './App.css'
 import { AdminApp } from './components/admin/AdminApp';
 import { LoginForm } from './components/Form/LoginForm/LoginForm';
 import { DashboardAdmin } from './components/admin/Dashboard';
+import { AboutPage } from './pages/AboutPages/AboutPages';
+import './App.css'
+
 export const AppAgency = () => {
   return (
     <>
@@ -16,6 +18,7 @@ export const AppAgency = () => {
         <Route path="/register" element={<RegisterForm />} />
         <Route path="/login" element={<LoginForm />} />
         <Route path='/destinations' element={<DestinationPage />} />
+        <Route path='/about' element={<AboutPage/>}/>
       </Routes>
     </>
   );

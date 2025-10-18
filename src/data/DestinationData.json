@@ -34,7 +34,7 @@
         "type": "playa",
         "description": "Centro poblado costero con gastronomía local, playa y cultura afro costera.",
         "ubicacion": "Corregimiento Arusí, Nuquí",
-        "image": "/public/img/images.jpeg",
+        "image": "/img/images.jpeg",
         "activitys": [
             "playa",
             "cultura",
@@ -64,7 +64,7 @@
         "type": "cascada",
         "description": "Cascada impresionante en la selva que forma arcoíris con los rayos del sol, buen destino para caminata y contacto con naturaleza.",
         "ubicacion": "Nuquí, Chocó",
-        "image": "/public/img/casacdaDelArmor.jpg",
+        "image": "/img/casacdaDelArmor.jpg",
         "activitys": [
             "caminata",
             "naturaleza",
